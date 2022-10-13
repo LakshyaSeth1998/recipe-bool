@@ -1,0 +1,12 @@
+<a [routerLink]="index"
+    routerLinkActive="active"
+    style="cursor: pointer;" class="list-group-item clearfix">
+    <div class="card" style="width: 18rem;">
+        <img [src]="recipeItem.imagePath"
+            class="card-img-top" alt="{{recipeItem.name}}" style="max-height: 200px;">
+        <div class="card-body">
+          <h5 class="card-title">{{recipeItem.name}}</h5>
+          <p class="card-text">{{recipeItem.description}}</p>
+        </div>
+    </div>
+</a>
